@@ -7,8 +7,6 @@ let inputAdultos = document.getElementById("adultos");
 let inputCriancas = document.getElementById("criancas");
 let inputDuracao = document.getElementById("duracao");
 
-let resultado = document.getElementById("resultado");
-
 function calcular() {
     console.log("Calculando...")
 
@@ -20,9 +18,9 @@ function calcular() {
     let qtdCerveja = (1200 * adultos)
     let qtdAgua = (1000 * adultos + (500 * criancas));
     
-    let carne = document.getElementById("carne")
-    let cerveja = document.getElementById("cerveja")
-    let agua = document.getElementById("agua")
+    let carne = document.getElementById("carne");
+    let cerveja = document.getElementById("cerveja");
+    let agua = document.getElementById("agua");
 
     if (duracao >= 6) {
         qtdTotalCarne = qtdCarne + (400 * adultos + (400/2 * criancas));
