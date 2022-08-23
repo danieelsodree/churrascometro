@@ -16,26 +16,26 @@ function calcular() {
     let criancas = inputCriancas.value;
     let duracao = inputDuracao.value;
 
-    let qtdCarne = (0.5 * adultos + (0.3 * criancas));
-    let qtdCerveja = (1.5 * adultos)
-    let qtdAgua = (1 * adultos + (0.5 * criancas));
+    let qtdCarne = (400 * adultos + (400/2 * criancas));
+    let qtdCerveja = (1200 * adultos)
+    let qtdAgua = (1000 * adultos + (500 * criancas));
     
     let carne = document.getElementById("carne")
     let cerveja = document.getElementById("cerveja")
     let agua = document.getElementById("agua")
 
     if (duracao >= 6) {
-        qtdTotalCarne = qtdCarne + (0.5 * adultos);
-        qtdTotalCerveja = qtdCerveja + (1 * adultos);
-        qtdTotalAgua = qtdAgua + (1 * adultos + (0.5 * criancas));
+        qtdTotalCarne = qtdCarne + (400 * adultos + (400/2 * criancas));
+        qtdTotalCerveja = qtdCerveja + (1000 * adultos);
+        qtdTotalAgua = qtdAgua + (1000 * adultos + (400 * criancas));
 
-        carne.innerHTML = qtdTotalCerveja + "Kg de Carne";
-        cerveja.innerHTML = qtdTotalCerveja + "L de Cerveja";
-        agua.innerHTML = qtdTotalAgua + "L de Água";
+        carne.innerHTML = qtdTotalCarne + "gr de Carne";
+        cerveja.innerHTML = qtdTotalCerveja + "ml de Cerveja";
+        agua.innerHTML = qtdTotalAgua + "ml de Água";
 
     } else {
-        carne.innerHTML = qtdCarne + "Kg de Carne";
-        cerveja.innerHTML = qtdCerveja + "L de Cerveja";
-        agua.innerHTML = qtdAgua + "L de Água";
+        carne.innerHTML = qtdCarne + "gr de Carne";
+        cerveja.innerHTML = qtdCerveja + "ml de Cerveja";
+        agua.innerHTML = qtdAgua + "ml de Água";
     }
 }
