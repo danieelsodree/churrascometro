@@ -1,6 +1,6 @@
 //carne - 400gr por pessoa
-//cerveja - 1200ml por pessoa + 6 horas - 2000ml
-//refrigerante/agua - 1000ml por pessoa + 6 horas 150ml
+//cerveja - 1200ml por pessoa + 6 horas *adicional
+//refrigerante/agua - 1000ml por pessoa + 6 horas *adicional
 //crianças valem por 0,5
 
 let inputAdultos = document.getElementById("adultos");
